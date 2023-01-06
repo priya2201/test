@@ -1,0 +1,37 @@
+//for(var i=0;i<10;i++){
+// function close(i){
+// setTimeout(()=>{
+// console.log(i)
+// ,5000})
+
+// }
+
+// }
+
+//let str='priya murpani';
+
+
+// console.log(p);
+// let q=p.reverse()
+// console.log(q);
+// let r=q.join(',')
+// console.log(r);
+
+// for(i=0;i<str.length;i++){
+//     for(j=0;j<str.length;j++){
+//         str[j]=str[i]
+//     }
+//     console.log(str[j]);
+// }
+
+
+
+let str1=str.split(" ").reverse().join(" ").split("").reverse().join("")
+console.log(str1);
+
+let a= "";
+
+for(let i=0;i<3;i++){
+    a+="*";
+    console.log(a);
+}

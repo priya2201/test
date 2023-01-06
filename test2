@@ -1,0 +1,56 @@
+//8 javascript tricks
+// const obj={
+//     name:'siya',
+//     lname:'duseja',
+//     experience:{
+//         college:'hr'
+//     },
+
+// };
+// console.log(obj.name)//normal
+
+// now destructuring
+// let{name,lname}=obj
+// console.log(name);
+// console.log(lname);
+
+// nested destructuring
+// const{experience:{college}}=obj;
+// console.log(college);
+
+// giving name as alias
+// let{name:username}=obj;
+// console.log(username);
+
+//swapping varaibles
+// let a=1;
+// let b=2;
+// let c=3;
+// [a,b,c]=[c,b,a]
+// console.log(a);
+// console.log(b);
+// console.log(c);
+
+
+// short circuit conditionals
+
+// if(login){
+// getdata();
+// } // not
+
+//login && getdata() // yes
+
+
+// const arg1=null;
+// let arg2;
+// if(agr1){
+//     arg2=arg1;
+// }
+// else{
+//     arg2='Default'
+// }// not
+
+l//et arg2=arg1 || 'Default'; //yes
+
+
+

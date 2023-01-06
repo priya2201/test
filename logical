@@ -1,0 +1,145 @@
+let is_string=function(input){
+    if(Object.prototype.toString.call(input) === '[object String]')
+return true;
+else
+return false;
+};
+console.log(is_string('hiee'));
+console.log(is_string([1,2,,3,4]));
+
+
+let is_blank=function(input){
+    if(input.length === 0)
+    return true;
+    else
+    return false;
+}
+console.log(is_blank(''));
+console.log(is_blank('abb'));
+
+let string_to_array=function(str){
+    let a= str.trim()
+    console.log(a);
+    let b=a.split(' ');
+    console.log(b);
+    return b;
+}
+console.log(string_to_array('pia mmmmm'));
+
+string_to_array = function (str) {
+    return str.trim().split(" ");
+};
+console.log(string_to_array("Robin Singh"));
+
+truncate_string=function(str,length){
+    if((str.constructor === String) && (length>0)){
+return str.slice(1,length);
+    }
+}
+console.log(truncate_string('piaa   mmmmmmkkkk',10))
+
+
+abbrev_string=function(str){
+    let split_name=str.split(' ');
+    console.log(split_name);
+    if(split_name.length > 1){
+        return (split_name[0]+ ' '+ split_name[1].charAt(1)+ '.');
+    }
+    return (split_name[0] + ' '+split_name[0].charAt(3) + '.');
+}
+console.log(abbrev_string('harry poter'));
+console.log(abbrev_string(''))
+
+
+protect_email = function (user_email) {
+    var avg, splitted, part1, part2;
+    splitted = user_email.split("@");
+    part1 = splitted[0];
+    avg = part1.length / 2;
+    part1 = part1.substring(0, (part1.length - avg));
+    part2 = splitted[1];
+    return part1 + "...@" + part2;
+};
+
+console.log(protect_email("robin_singh@example.com"));
+
+protect_email_names=function(user_mailname){
+    let split,split1,split2,avg,splitagain,p1,p2
+    split=user_mailname.split('@');
+    console.log(split);
+    split1=split[0];
+    console.log(split1);
+    avg=split1.length/2;
+   console.log(avg);
+    split1=split1.substring(0,split1.length-avg);
+    console.log(split1);
+    split2=split[1];
+    console.log(split2);
+    splitagain=split1.split(' ');
+    console.log(splitagain);
+    p1=splitagain[0];
+    console.log(p1);
+    avg=p1.length/2;
+    console.log(avg);
+    p1=p1.substring(0,p1.length-avg);
+    console.log(p1);
+  //  return p1+ '...@' + split2;
+    p2=splitagain[1];
+    console.log(p2);
+    avg=p2.length/2;
+    console.log(avg);
+    p2=p2.substring(0,p2.length-avg);
+    console.log(p2);
+    console.log(p2+ '@'+split2);
+    return p2+ '...@'+split2;
+}
+console.log(protect_email_names('priya kkkmmnnnbbvvcc@gmail.com'))
+
+capitalize=function(str){
+    return str.charAt(0).toUpperCase() +str.slice(1);
+    //str.slice(0,7)
+}
+
+console.log(capitalize('hie how are you'));
+
+function fact(f){
+let n =1
+for(let i=1;i<=f;i++){
+n=n*i
+}
+return n
+}
+
+console.log(fact(5));
+
+let str='Priya'
+let rev=''
+for(i=str.length-1;i>=0;i--){
+    rev +=str[i]
+}
+console.log(rev);
+
+let is_capiatlize_first_letter=function(str){
+    return str.replace(/\w\S*/g,function(txt){
+        return txt.charAt(0).toUpperCase+txt.substr(1).toLowerCase();
+    });
+}
+console.log(is_capiatlize_first_letter('js exercies of substr and replace'))
+
+insert = function insert(main_string, ins_string, pos) {
+    if(typeof(pos) == "undefined") {
+     pos = 0;
+   }
+    if(typeof(ins_string) == "undefined") {
+     ins_string = '';
+   }
+    return main_string.slice(0, pos) + ins_string + main_string.slice(pos);
+     }
+ console.log(insert('We are doing some exercises.'));
+ console.log(insert('We are doing some exercises.','JavaScript '));
+ console.log(insert('We are doing some exercises.','JavaScript ',18));
+
+
+
+
+
